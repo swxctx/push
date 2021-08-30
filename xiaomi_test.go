@@ -1,9 +1,11 @@
-# push
-第三方厂商站外推送整合SDK(Golang)
+package push
 
-## 小米推送
+import (
+	"testing"
 
-```
+	"github.com/swxctx/push/xiaomi"
+)
+
 func Test_XiaomiSendByRegid(t *testing.T) {
 	sender := xiaomi.NewSender("peb+Sg9", "com.swxctx.app", true)
 	regId := "rxyEIJOEWjKPRsx+FYxd4+FXyej67+A"
@@ -33,4 +35,3 @@ func Test_XiaomiSendByAlias(t *testing.T) {
 		t.Errorf("err-> %v", err)
 	}
 }
-```
