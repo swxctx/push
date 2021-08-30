@@ -4,6 +4,9 @@
 ## 小米推送
 
 ```
+New Sender
+sender := xiaomi.NewSender("peb+Sg9", "com.swxctx.app", true)
+
 func Test_XiaomiSendByRegid(t *testing.T) {
 	sender := xiaomi.NewSender("peb+Sg9", "com.swxctx.app", true)
 	regId := "rxyEIJOEWjKPRsx+FYxd4+FXyej67+A"
